@@ -1,0 +1,16 @@
+body
+{
+	background-color: black;
+	padding-left: 550px;
+	padding-top: 50px;
+	padding-right: 500px;
+	font-family: sans-serif;
+}
+
+div
+{
+	border: solid;
+	padding: 50px;
+	background-color: #DAF7A6;
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>   
+<html>
+	<head>
+	<title>Login Form</title>
+    	<script src="validation_login.js"></script>
+    	<link rel="stylesheet" href="validation_login.css">
+	</head>
+    
+	<body onload='document.login.email.focus()'>
+    	<div>
+    	<h2>Login Form</h2>
+     	<form name="login" onsubmit="return validateForm()">
+          	<label for="email">Email Id: </label>
+          	<input type="text" id="email" name="email" required><br><br>
+          	<label for="password">Password: </label> 
+          	<input type="password" id="password" name="password" onkeyup='check();' required><br><br>
+         	<label for="cpassword">Confirm Password: </label>
+          	<input type="password" id="cpassword" name="cpassword" onkeyup='check();' required><br><br>
+         	<button type="submit" onclick="validateForm(document.login.email)"> Login</button>
+          	<button type="reset">Clear</button>  	 
+    	</form>
+    	<a href="reset%20password.html">Forget Password</a> <br> <br>
+    	</div>
+	</body>
+</html>
+

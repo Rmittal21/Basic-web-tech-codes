@@ -1,0 +1,43 @@
+html {
+    font-family: "georgia", sans-serif;
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;  
+    color: #C11B17;
+}
+h2 {
+    margin: 0;
+    padding: 20px 0;    
+    color: #151B54;
+}
+p {
+    width: 500px;
+  }
+body{
+    background-color: #E5E4E2;
+    color:black;
+    border-style: solid;
+}
+img {
+    display: block;
+    align: left;
+    width: 200px;
+}  
+
+.column {
+    float: left;
+    width: 27%;
+  }
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 30px;
+}
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

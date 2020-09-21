@@ -1,0 +1,41 @@
+businesscard
+{
+    font-family: Verdana;
+    font-size: 18px;
+    color: black;
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    background-color:#d2f7de;
+    width: 400px;
+    border: 5px;
+    border: 2px solid;
+    text-align: left;
+}
+ 
+name 
+{
+    display: block;
+    font-weight: bold;
+}
+ 
+phone 
+{
+    display: block;
+}
+ 
+company
+{
+    display:block;
+}
+ 
+email
+{
+    display: block;
+    color: Red;
+}
+ 
+email:before { content: "Email: " }
+phone:before  { content:attr(type) ": " }
+phone[primary]:after { content:"("attr(primary)")"}
+

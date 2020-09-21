@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>JavaScript Native Elements</title>
+        <style>
+	h2{
+		color: LightBlue;
+	}
+        div{
+                border: 2px solid;
+                padding-left: 300px;
+                padding-right: 300px;
+                
+        }
+        </style>
+        
+
+    </head>
+    <body bgcolor=black text=white>
+        <div>
+
+        <h2>JavaScript Number Methods</h2>
+        <p>The <b>toExponential()</b> method returns a string, with the number rounded and written using exponential notation.</p>
+        <p>An optional parameter defines the number of digits behind the decimal point.</p>
+        <i> var x = 3.1478;</i>
+        <p id="expo"></p>
+   
+        <p>The <b>valueOf()</b> method returns a number as a number.</p>
+        <i>var x = 123;</i>
+        <p id="valueof"></p>
+        </div>
+        
+        <br>
+        <div>
+        <h2>JavaScript String Methods</h2>
+        <p>The <b>length</b> property returns the length of a string.</p>
+        <i>var txt = "Roopal Mittal";</i>
+        <p id="length"></p>
+      
+        <p>The <b>indexOf()</b> method returns the position of the first occurrence of a specified text.</p>
+        <i> var str = "Please locate where 'locate' occurs!";</i>
+          <i>  var pos = str.indexOf("locate");</i>
+        <p id="index"></p>
+        
+        <p>The <b>search()</b> method returns the position of the first occurrence of a specified text in a string.</p>
+        <i>var str = "Please locate where 'locate' occurs!";</i><br>
+          <i>  var pos = str.search("locate");</i>
+        <p id="search"></p>
+        </div>
+        <br>
+        
+        <div>
+        <h2>JavaScript Math Functions</h2>
+        The math object provides you properties and methods for mathematical constants and functions.
+        <p><b>Math.round(x)</b> will round off the value of x to the nearest value.</p>
+        <p>Math.round(10.8976)=</p>
+        <p id="round"></p>
+            
+        <p><b>Math.pow(a,x)</b> returns a to the power x.</p>
+        <p>Math.pow(12,6)=</p>
+        <p id="power"></p>
+            
+        <p><b>Math.sqrt(x)</b> returns the square root of x.</p>
+        <p>Math.sqrt(100)=</p>
+        <p id="sqrt"></p>
+        </div>
+	<br>        
+
+        <div>
+            <h2>JavaScript Date Functions</h2>
+            <p>Using new Date(), creates a new date object with the current date and time.</p>
+            <i>var d = new Date();</i>
+            <p id="date"></p>
+            
+            <p>Using new Date(with 7 parameters), creates a new date object with the specified date and time.</p>
+            <i>var d = new Date(2018, 11, 24, 10, 33, 30, 0);</i>
+            <p id="date1"></p>
+           
+            <p>A Date object can be created with a specified date and time:</p>
+            <i>var d = new Date("October 13, 2014 11:13:00");</i>
+            <p id="date2"></p>
+
+        </div>
+        <script>
+            document.getElementById("round").innerHTML = Math.round(10.8976);
+            
+            document.getElementById("power").innerHTML = Math.pow(12,6);
+            
+            document.getElementById("sqrt").innerHTML = Math.sqrt(100);
+            
+            var x = 3.1478;
+            document.getElementById("expo").innerHTML =x.toExponential() + ", " + x.toExponential(2) + ", " + x.toExponential(4) + ", " + x.toExponential(6);
+            
+            var x = 123;
+            document.getElementById("valueof").innerHTML = x.valueOf() + ", " +(123).valueOf() + ", " +(100 + 23).valueOf();
+            
+            var txt = "Roopal Mittal";
+            document.getElementById("length").innerHTML = txt.length;
+            
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.indexOf("locate");
+            document.getElementById("index").innerHTML = pos;
+            
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.search("locate");
+            document.getElementById("search").innerHTML = pos;
+            
+            
+            var d = new Date();
+            document.getElementById("date").innerHTML = d;
+            
+            var d = new Date(2018, 11, 24, 10, 33, 30, 0);
+            document.getElementById("date1").innerHTML = d;
+            
+            var d = new Date("October 13, 2014 11:13:00");
+            document.getElementById("date2").innerHTML = d;
+        </script>
+    </body>
+</html>

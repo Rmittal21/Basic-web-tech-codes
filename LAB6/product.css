@@ -1,0 +1,32 @@
+product
+{
+    font-family: monospace;
+    font-size: 14px;
+    color: DarkBlue;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid;
+    border-color: black;
+    background-color: #fcf2fc;
+    width: 500px;
+    
+}
+
+name
+{
+    display: block;
+    font-weight:bold;   
+}
+
+desc
+{
+    display: block;
+    color:#2d025e;
+    font-style: italic;
+}
+
+price
+{
+    color: Green;
+}

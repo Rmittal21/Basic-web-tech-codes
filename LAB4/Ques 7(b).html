@@ -1,0 +1,95 @@
+<html>
+	<head>
+	<title>
+    	Register
+	</title>
+    	<script src="validation_register.js"></script>
+    	<link rel="stylesheet" href="validation_register.css">
+	</head>
+    
+	<body onload='document.register.fname.focus()'>
+    	<div>
+    	<h2>Registration Form</h2>
+    	<h5>Want to proceed further? Register yourself!</h5>
+     	<form name="register" onsubmit="return validateForm()">
+          	<label for="fname">First Name: </label>
+          	<input type="text" id="fname" name="fname" required><br><br>
+          	<label for="lname">Last Name: </label>
+          	<input type="text" id="lname" name="lname" required><br><br>
+          	<label for="fname">Email Id: </label>&nbsp;&nbsp;
+          	<input type="text" id="email" name="email" required><br><br>
+          	Gender: &nbsp;
+          	<input type="radio" id="gender" name="gender" value="gender">
+          	<label for="male">Male</label>
+          	<input type="radio" id="female" name="gender" value="female">
+          	<label for="female">Female</label>
+          	<input type="radio" id="other" name="gender" value="other">
+          	<label for="other">Prefer not to say</label> <br> <br>
+          	<label for="cars">Birthday:</label>&nbsp;&nbsp;
+          	<select id="day" name="day">
+            	<option value="1">1</option>
+            	<option value="2">2</option>
+            	<option value="3">3</option>
+            	<option value="4">4</option>
+            	<option value="5">5</option>
+            	<option value="6">6</option>
+            	<option value="7">7</option>
+            	<option value="8">8</option>
+            	<option value="9">9</option>
+            	<option value="10">10</option>
+            	<option value="11">11</option>
+            	<option value="12">12</option>
+            	<option value="13">13</option>
+            	<option value="14">14</option>
+            	<option value="15">15</option>
+            	<option value="16">16</option>
+            	<option value="17">17</option>
+            	<option value="18">18</option>
+            	<option value="19">19</option>
+            	<option value="20">20</option>
+            	<option value="21">21</option>
+            	<option value="22">22</option>
+            	<option value="23">23</option>
+            	<option value="24">24</option>
+            	<option value="25">25</option>
+            	<option value="26">26</option>
+            	<option value="27">27</option>
+            	<option value="28">28</option>
+            	<option value="29">29</option>
+            	<option value="30">30</option>
+            	<option value="31">31</option>
+          	</select>
+          	<select id="month" name="month">
+            	<option value="Jan">January</option>
+            	<option value="Feb">February</option>
+            	<option value="Mar">March</option>
+            	<option value="Apr">April</option>
+            	<option value="May">May</option>
+            	<option value="June">June</option>
+            	<option value="July">July</option>
+            	<option value="Aug">August</option>
+            	<option value="Sept">September</option>
+            	<option value="Oct">October</option>
+            	<option value="Nov">November</option>
+            	<option value="Dec">December</option>
+         	</select> <br> <br>
+         	Employment type:
+          	<input type="checkbox" id="1" name="emp1" value="Student">
+            	<label for="student"> Student</label>
+            	<input type="checkbox" id="2" name="emp2" value="Job">
+            	<label for="job"> Looking for a job</label>
+            	<input type="checkbox" id="3" name="emp3" value="Intern">
+         	<label for="intern"> Looking for internship</label> <br> <br>
+         	<label for="textt">Tell us something about yourself:</label> <br>
+         	<textarea id="textt" name="textt" rows="4" cols="50"></textarea><br><br>
+          	<label for="lname">Password: </label>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+          	<input type="password" id="password" name="password" onkeyup='check();' ><br><br>
+         	<label for="lname">Confirm Password: </label>
+          	<input type="password" id="cpassword" name="cpassword" onkeyup='check();' ><br><br>
+         	 
+          	<button type="submit" onclick="validateForm()">Register</button>
+          	<button type="reset"> Reset </button>  	 
+    	</form>
+    	</div>
+	</body>
+</html>

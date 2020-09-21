@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript" src="Ques9.js">
+    	</script>
+</head>
+<body onload="pageLoad()" bgcolor="black" text="white">
+	<center><h2>
+    	<p>OnClick Method for displaying text</p>
+    	<button onclick="displayMessage()">Click me</button>
+    	<p id="demo"></p>
+
+    	<p>OnChange Method to trigger the function to convert the text to UpperCase when the text field is left.</p>
+    	Enter your name:
+    	<input type="text" id="fname" onchange="myFunction2()">
+    	<p>Click the text field to see a different colour and leave the text field to see a different colour.</p>
+    	Enter your name:
+    	<input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+	</h2>
+    	<h1 onmouseover="style.color='lightpink'" onmouseout="style.color='yellow'">Mouse over this text</h1>
+    	<form onsubmit="confirmInput()">
+        	<h2>Enter your name:</h2>
+        	<input id="fname" type="text">
+        	<input type="submit">
+    	</form>
+	</center>
+</body>
+</html>

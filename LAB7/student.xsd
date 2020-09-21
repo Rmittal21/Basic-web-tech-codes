@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="students">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element name="student" minOccurs="3" maxOccurs="10"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="student">
+        <xs:complexType mixed ="true">
+           <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="18"/>
+                        <xs:maxInclusive value="25"/>
+                    </xs:restriction>
+                </xs:simpleType>  
+             </xs:element>
+            
+            <xs:element name="rollno">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="70"/>
+                </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="course">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="MCA"/>
+                        <xs:enumeration value="M.Tech"/>
+                        <xs:enumeration value="B.Tech"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            
+            
+           </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

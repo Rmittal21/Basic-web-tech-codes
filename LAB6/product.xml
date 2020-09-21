@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="product.css"?>
+<productlisting>
+    <product>
+        <name>T-shirt (Men)</name>
+        <desc>A solid black colour PUMA t-shirt available in sizes(S, M, L, XL)</desc>
+        <price>Rs. 2000</price>
+    </product>
+    <product>
+        <name>Track pant (Unisex)</name>
+        <desc>A blue colour ADIDAS track pant with neon green strips available in sizes(S, M, L, XL)</desc>
+        <price>Rs. 2500</price>
+    </product>
+    <product>
+        <name>Yoga pant(Women)</name>
+        <desc>A strechable gray colour skin fit yoga pant available in sizes(S, M, L, XL) </desc>
+        <price>Rs. 700</price>
+    </product>
+</productlisting>

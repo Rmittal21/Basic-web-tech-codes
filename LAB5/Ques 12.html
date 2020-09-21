@@ -1,0 +1,34 @@
+<html>
+	<head>
+    	<title>
+        	Hidden Elements
+    	</title>
+    	<style>
+        	body
+        	{
+            	background-image: url(bg2.jpg);
+        	}
+    	</style>
+	</head>
+<body>
+<br>
+<h1 style="color: white;">Example of Hidden Input Field</h1>
+
+<input type="hidden" id="myInput" value=" Welcome to the world of secrets!">
+
+<h2 style="color: white;">Click the button to see hidden text. 
+<br>This is implemented by getting the value of the hidden field.</h2>
+
+<button onclick="yourName()">See Magic !</button>
+
+<i id="magic" style="color: white;"></i>
+
+<script>
+function yourName() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("magic").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="student.xsd">
+    <student>
+        <name>Roopal Mittal</name>
+        <age>21</age>
+        <rollno>020</rollno>
+        <course>MCA</course>
+    </student>
+    <student>
+        <name>Pratham Mittal</name>
+        <age>20</age>
+        <rollno>043</rollno>
+        <course>BTech</course>
+    </student>
+    <student>
+        <name>Rishabh</name>
+        <age>22</age>
+        <rollno>020</rollno>
+        <course>Mtech</course>
+    </student>
+</students>

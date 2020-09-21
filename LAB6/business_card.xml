@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="business_card.css"?>
+<businesscard>
+    
+        <name>Roopal Mittal</name>
+        <phone type="Home">8588910234</phone>	
+	<phone type="Work">9201372843</phone>
+        <email>roopal.mca@gmail.com</email>
+        <company>Qboard_secure</company>
+    
+</businesscard>

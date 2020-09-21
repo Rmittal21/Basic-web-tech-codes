@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>
+	Number validation using javascript
+	</title>
+	<style>
+	p{color: Red;}
+	</style>
+</head>
+<body bgcolor="LightGray">
+	
+	<h2>Enter a number: </h2>
+	<p>(Any other alphabet or special character cannot be entered)</p>
+	<input type="text" id="tbNumbers" value=""
+		onkeypress="javascript:return isNum(event)"/>
+	<button type="submit">Submit</button>
+	
+</body>
+<script>
+	function isNum(event){
+		var key = (event.which)? event.which : event.key
+		if(key != 46 && key > 31 && (key < 48 || key >57))
+			return false;
+		return true;
+	}
+</script>
+</html>
